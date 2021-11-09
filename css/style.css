@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+a  {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    background: url('../img/bg-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    padding: 3rem;
+    position: relative;
+
+}
+
+
+ul {
+    list-style-type: none;
+}
+ul li {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+ul img {
+    width: 2rem;
+    height: 2rem;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+
+}
+
+
+
+.name {
+    text-shadow: 20px;
+    cursor: pointer;
+}
+
+.name:hover {
+    animation: 3s linear 1s infinite running slidein;
+}
+ 
+
+.menu span, .menu_social  span{
+    margin-left: 2rem;
+
+}
+
+nav li {
+    font-size: 2rem;
+}
+
+nav li:hover {
+    transform: scale(1.1);
+    
+}
+
+.hero {
+    position: absolute;
+    width: 95vw;
+    height: 100vh;
+    top: 0;
+    left: 7rem;
+    transition: all .5s;
+}
+.home.show, .about.show,  .profile.show {
+    display: none;
+}
+
+.home, .profile {
+    background:url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.home p {
+    width: 36%;
+    font-size: 2rem;
+}
+
+.home h1 {
+    margin-bottom: 5rem;
+}
+
+.hero.hover-menu {
+    transition: all .5s;
+    margin-left: 12rem;
+    width: 80vw;
+}
+
+.about {
+    width: 100%;
+    height: 100%;
+    background-color: silver;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:1.5rem 0;
+    
+}
+.about_section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10%;
+    transition: all 1s;
+    
+    
+    
+}
+.about_section.left {
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+
+
+.about_text {
+    font-size: 1.1rem;
+    width: 225px;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    background-color: steelblue;
+    padding: 1rem;
+    transition: all 1s;
+}
+
+.about_section.hidden .about_text {
+    transform: translateX(-100%);
+    z-index: -10;
+}
+
+.about_section.hidden.left .about_text {
+    transform: translateX(100%);
+    z-index: -10;
+}
+
+
+.about_rect {
+    width: 225px;
+    height: 200px;
+    background: coral;
+    border: slategray  2px solid;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    text-align: center;
+    cursor: pointer;
+    z-index: 5;
+    
+}
+.about_rect span {
+    font-size: 1rem;
+    animation: blink1 2s linear infinite;
+    display: block;
+}
+
+
+@keyframes blink1 {
+    0% { color: rgb(243, 236, 236,1); }
+    50% { color: rgba(243, 236, 236, 0); }
+    100% { color: rgba(243, 236, 236, 1); }
+  }
+
+
+@keyframes slidein {
+    from {
+        transform: rotateX(0deg);
+        
+    } to {
+        transform: rotateX(360deg);
+        
+    }
+}
