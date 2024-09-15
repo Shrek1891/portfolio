@@ -8,6 +8,7 @@ import {leftLists, rightLists} from "@/data";
 import Lottie from "react-lottie";
 import MagicButton from "@/components/ui/MagicButton";
 import {IoCopyOutline} from "react-icons/io5";
+import {Image} from "@react-three/drei";
 
 export const BentoGrid = ({
                               className,
@@ -92,7 +93,7 @@ export const BentoGridItem = ({
                 </div>
                 <div className={`absolute right-0 -bottom-5 ${id === 5 && "text-opacity-70 w-full"}`}>
                     {spareImg & (
-                        <img
+                        <Image
                             src={spareImg}
                             className={"object-cover, object-center w-full h-full"}
                             alt={spareImg}
