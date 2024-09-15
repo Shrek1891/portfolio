@@ -47,7 +47,7 @@ export const BentoGridItem = ({
     icon?: React.ReactNode;
     id?: number;
     img?: string;
-    spareImg?: number;
+    spareImg?: any;
     titleClassName?: string;
     imgClassName?: string;
 }) => {
