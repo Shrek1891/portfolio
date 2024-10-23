@@ -74,7 +74,7 @@ export const projects = [
         title: "CRM for teachers",
         des: "Database for teachers. Keep track of courses, classes and students!! Test login - test@test.com, psassword 3718758 ",
         img: "/teachers_diary.jpg",
-        iconLists: ["/re.svg", "/ts.svg","sp.jpg" ],
+        iconLists: ["/re.svg", "/ts.svg", "sp.jpg"],
         link: "https://techers-diary.vercel.app",
     },
     {
@@ -85,16 +85,23 @@ export const projects = [
         iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/mndb.png"],
         link: "https://teachersflow.vercel.app/",
     },
+    {
+        id: 3,
+        title: "Simple movies catalog",
+        des: "Well, what popular movies could you like to watch?",
+        img: "/3.jpg",
+        iconLists: ["/re.svg","/mui.png"],
+        link: "https://movies-rho-sable.vercel.app/",
+    }
 
 ];
-
 
 
 export const socialMedia = [
     {
         id: 1,
         img: "/git.svg",
-        link:"https://github.com/Shrek1891?tab=repositories"
+        link: "https://github.com/Shrek1891?tab=repositories"
     },
     {
         id: 2,
