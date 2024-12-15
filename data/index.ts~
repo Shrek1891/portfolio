@@ -74,8 +74,8 @@ export const projects = [
         title: "Makler Project",
         des: "Small Project for real estate realtors. Housing for rent",
         img: "/projectMakler.jpg",
-        iconLists: ["/re.svg", "/ts.svg", "sp.jpg"],
-        link: "https://techers-diary.vercel.app",
+        iconLists: ["/next.svg", "/tail.svg", "sp.jpg"],
+        link: "https://makler-sib3.vercel.app/",
     },
     {
         id: 1,
